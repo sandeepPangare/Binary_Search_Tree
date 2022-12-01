@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 public class BinarySearchTree {
 
-    public Node insert(Node root, int value) {
+    public Node insert(Node root, int value) { //create method for insert data
 
         if (root == null) {  //root is null go at leaf node
             return createNewNode(value);
