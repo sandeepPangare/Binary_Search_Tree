@@ -43,4 +43,23 @@ public class BinarySearchTree {
     public int size() {
         return size;
     }
+    public boolean search(Node root, int value) {
+        if (root == null) {
+            return false;
+        }
+
+        boolean isPresent = false;
+        while (root != null) {
+            if (root.data < value) {
+                root = root.left;
+            } else if (root.data > value) {
+                root = root.right;
+            } else {
+                isPresent = true;
+                break;
+            }
+        }
+
+        return isPresent;
+    }
 }

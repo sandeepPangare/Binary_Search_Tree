@@ -23,6 +23,7 @@ public class BinarySearchTreeMain {
         bst.print(root);
         System.out.println();
         System.out.println("Number of Nodes in binary tree: " + bst.size());
+        System.out.println("Search 63 in BST: "+ bst.search(root,63));
     }
 }
 
